@@ -1,3 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
   package="com.example.ftdzendesk">
+    <application>
+        <activity
+            android:name="zendesk.classic.messaging.MessagingActivity"
+            android:exported="false"
+            android:theme="@style/ZendeskSdkMessaging">
+        </activity>
+    </application>
 </manifest>
