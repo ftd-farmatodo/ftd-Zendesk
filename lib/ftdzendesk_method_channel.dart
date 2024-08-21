@@ -10,8 +10,56 @@ class MethodChannelFtdzendesk extends FtdzendeskPlatform {
   final methodChannel = const MethodChannel('ftdzendesk');
 
   @override
-  Future<String?> getPlatformVersion() async {
-    final version = await methodChannel.invokeMethod<String>('getPlatformVersion');
-    return version;
+  Future<void> initialize(String accountKey, String appId) async {
+    await methodChannel.invokeMethod<void>('initialize', {
+      'accountKey': accountKey,
+      'appId': appId,
+    });
+  }
+
+  @override
+  Future<void> setVisitorInfo({
+    String? name,
+    String? email,
+    String? phoneNumber,
+    String? department,
+  }) async {
+    await methodChannel.invokeMethod<void>('setVisitorInfo', {
+      'name': name,
+      'email': email,
+      'phoneNumber': phoneNumber,
+      'department': department,
+    });
+  }
+
+  @override
+  Future<void> startChat({
+    Color? primaryColor,
+    bool isPreChatFormEnabled = true,
+    bool isAgentAvailabilityEnabled = true,
+    bool isChatTranscriptPromptEnabled = true,
+    bool isOfflineFormEnabled = true,
+  }) async {
+    await methodChannel.invokeMethod<void>('startChat', {
+      'primaryColor': primaryColor?.value,
+      'isPreChatFormEnabled': isPreChatFormEnabled,
+      'isAgentAvailabilityEnabled': isAgentAvailabilityEnabled,
+      'isChatTranscriptPromptEnabled': isChatTranscriptPromptEnabled,
+      'isOfflineFormEnabled': isOfflineFormEnabled
+    });
+  }
+
+  @override
+  Future<void> addTags({List<String>? tags}) async {
+    await methodChannel.invokeMethod<void>('addTags', {
+      'tags': tags,
+    });
+  }
+
+  @override
+  Future<void> removeTags({List<String>? tags}) async {
+    await methodChannel.invokeMethod<void>('removeTags', {
+      'tags': tags,
+    });
   }
 }
