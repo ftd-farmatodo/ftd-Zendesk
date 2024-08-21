@@ -1,0 +1,55 @@
+PODS:
+  - Flutter (1.0.0)
+  - ftdzendesk (0.0.1):
+    - Flutter
+    - ZendeskChatSDK
+  - integration_test (0.0.1):
+    - Flutter
+  - ZendeskChatProvidersSDK (5.0.3)
+  - ZendeskChatSDK (5.0.3):
+    - ZendeskChatProvidersSDK (~> 5.0.3)
+    - ZendeskMessagingSDK (~> 6.0.1)
+  - ZendeskCommonUISDK (9.0.1)
+  - ZendeskMessagingAPISDK (6.0.0):
+    - ZendeskSDKConfigurationsSDK (~> 4.0.0)
+  - ZendeskMessagingSDK (6.0.1):
+    - ZendeskCommonUISDK (~> 9.0.1)
+    - ZendeskMessagingAPISDK (~> 6.0.0)
+  - ZendeskSDKConfigurationsSDK (4.0.0)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - ftdzendesk (from `.symlinks/plugins/ftdzendesk/ios`)
+  - integration_test (from `.symlinks/plugins/integration_test/ios`)
+
+SPEC REPOS:
+  trunk:
+    - ZendeskChatProvidersSDK
+    - ZendeskChatSDK
+    - ZendeskCommonUISDK
+    - ZendeskMessagingAPISDK
+    - ZendeskMessagingSDK
+    - ZendeskSDKConfigurationsSDK
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  ftdzendesk:
+    :path: ".symlinks/plugins/ftdzendesk/ios"
+  integration_test:
+    :path: ".symlinks/plugins/integration_test/ios"
+
+SPEC CHECKSUMS:
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  ftdzendesk: 7036267fdb3436facf52112def3839dadae547d0
+  integration_test: ce0a3ffa1de96d1a89ca0ac26fca7ea18a749ef4
+  ZendeskChatProvidersSDK: 80485584b6b5af1b3e15ea54ba93600c225290b2
+  ZendeskChatSDK: 5f64abb74eb3bd4e52250b8984f0408f6e703490
+  ZendeskCommonUISDK: 720e6e34eff34ddae5feb1935f788a0893eaf672
+  ZendeskMessagingAPISDK: 9ce539eebcaa014fe6acc44da31262a2c52891c1
+  ZendeskMessagingSDK: d0f65229188cb4936a56be6707992a2511b5175b
+  ZendeskSDKConfigurationsSDK: 79c444da987390456ec05657ffa2f5ca0eb54aef
+
+PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796
+
+COCOAPODS: 1.15.2
