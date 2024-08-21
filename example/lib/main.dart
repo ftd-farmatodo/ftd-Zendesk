@@ -16,11 +16,11 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   final _zendeskpluginPlugin = Ftdzendesk();
-  final zendeskKey = 'XL0We4lIn0rDrrqKXyIdlR1BIq7cXeR3';
-  final zendeskAppId = '345305153887080449';
+  final zendeskKey = 'XXXXXX';
+  final zendeskAppId = 'xxxxx';
   final user = {
-    'name': 'Yaniel',
-    'email': 'yaniel.gomez@farmatodo.com',
+    'name': 'xxxxxx',
+    'email': 'xxxxxx@farmatodo.com',
     'phone': '+570000000000',
   };
   final department = 'Soporte 24 horas';
